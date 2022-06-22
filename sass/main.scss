@@ -1,10 +1,45 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+      /* custom.scss */    
+        
+        /* import the necessary Bootstrap files */
+    
+        /* -------begin customization-------- */   
+        
+        /* simply assign the value */ 
+        $body-bg: #747474;
+        $body-color:  #0A0708;
+        $a : white;
+        $border-width: 5px;
+      
+        
+        /* or, use an existing variable */
+        // $theme-colors: (
+        //     "primary":    $primary,
+        //     "secondary":  $secondary,
+        //     "success":    $success,
+        //     "info":       $info,
+        //     "warning":    $warning,
+        //     "danger":     $danger,
+        //     "light":      $light,
+        //     "dark":       $dark
+        // );
+        /* -------end customization-------- */  
+        
+        /* finally, import Bootstrap to set the changes! */
+        @import "../node_modules/bootstrap/scss/bootstrap.scss";
+        @import "../node_modules/bootstrap/scss/images";
+        @import "../node_modules/bootstrap/scss/variables";
+        @import "../node_modules/bootstrap/scss/functions";
+        
 
-$custom-theme-colors: (
-    "navbar-light": violet,
-);
 
-$theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/functions";
+
+
+// $custom-theme-colors: (
+//     "navbar-light": violet,
+// );
+
+// $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
